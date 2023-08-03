@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Company;
 use Illuminate\Http\Request;
+
 //use Illuminate\Http\Response;
 
 class CompanyController extends Controller
@@ -15,7 +16,7 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $data['companies'] = Company::orderBy('id','desc')->paginate(5);
+        $data['companies'] = Company::orderBy('id', 'desc')->paginate(5);
 
         return view('companies.index', $data);
     }
@@ -33,7 +34,7 @@ class CompanyController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  Request  $request
+     * @param Request $request
      * @return
      */
     public function store(Request $request)
@@ -55,7 +56,7 @@ class CompanyController extends Controller
 
 
         return redirect()->route('companies.index')
-            ->with('success','Company has been created successfully.');
+            ->with('success', 'Company has been created successfully.');
     }
 
     /**
@@ -66,7 +67,7 @@ class CompanyController extends Controller
      */
     public function show(Company $company)
     {
-        return view('companies.show',compact('company'));
+        return view('companies.show', compact('company'));
     }
 
     /**
@@ -77,7 +78,7 @@ class CompanyController extends Controller
      */
     public function edit(Company $company)
     {
-        return view('companies.edit',compact('company'));
+        return view('companies.edit', compact('company'));
     }
 
     /**
@@ -104,7 +105,7 @@ class CompanyController extends Controller
         $company->save();
 
         return redirect()->route('companies.index')
-            ->with('success','Company Has Been updated successfully');
+            ->with('success', 'Company Has Been updated successfully');
     }
 
     /**
@@ -118,6 +119,6 @@ class CompanyController extends Controller
         $company->delete();
 
         return redirect()->route('companies.index')
-            ->with('success','Company has been deleted successfully');
+            ->with('success', 'Company has been deleted successfully');
     }
 }

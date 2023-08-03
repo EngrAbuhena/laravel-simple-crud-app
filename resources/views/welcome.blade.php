@@ -7,7 +7,7 @@
                 <h1 class="display-one mt-5">Laravel Project - CRUD</h1>
                 <p>Welcome to the PHP Laravel simple project for beginners</p>
                 <br>
-                <a href="product" class="btn btn-outline-primary">Show Products</a>
+                <a href="{{ route('/companies') }}" class="btn btn-outline-primary">Show Companies</a>
             </div>
         </div>
     </div>
