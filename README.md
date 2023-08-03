@@ -3,8 +3,6 @@
 ## Routes
 ### GET - http://127.0.0.1:8000/companies/
 
-### GET - http://127.0.0.1:8000/api/products/{product}
-
 ### POST - http://127.0.0.1:8000/companies/create/
 
 ### PUT/PATCH - http://127.0.0.1:8000/companies/{id}/edit/
