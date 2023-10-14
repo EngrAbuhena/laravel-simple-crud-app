@@ -13,17 +13,21 @@
 ## After clicking the "Create" button
 ![aftercreate](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/aftercreate1.png?raw=true)
 
+![aftercreate2](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/aftercreate1.1.png?raw=true)
+
 ## After clicking "Submit" button
-![created](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/created.png?raw=true)
+![created](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/created1.png?raw=true)
 
 ## After clicking "Edit" button
-![afteredit](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/afteredit.PNG?raw=true)
+![afteredit](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afteredit1.png?raw=true)
+![afteredit2](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afteredit1.1.png?raw=true)
 
 ## After changing data and clicking "Submit" button
-![updated](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/updated.png?raw=true)
+![updated](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/edited1.png?raw=true)
 
 ## After clicking "Delete" button
-![afterdelete](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/afterdelete.PNG?raw=true)
+![afterdelete](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afterdelete1.png?raw=true)
+![afterdelete2](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afterdelete1.1.png?raw=true)
 
 
 ## Security Vulnerabilities
