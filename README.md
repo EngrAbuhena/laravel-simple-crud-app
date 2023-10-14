@@ -18,7 +18,7 @@
 #### DELETE - http://127.0.0.1:8000/companies/delete/{company}
 
 ## Home Page Display All Companies
-![home](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/home.png?raw=true)
+![home](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/home2.png?raw=true)
 
 
 ## After clicking the "Create" button
@@ -27,18 +27,22 @@
 ![aftercreate2](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/aftercreate1.1.png?raw=true)
 
 ## After clicking "Submit" button
-![created](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/created1.png?raw=true)
+![created](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/created2.png?raw=true)
+
+## After clicking "View" button
+![show](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/show.png?raw=true)
+
 
 ## After clicking "Edit" button
 ![afteredit](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afteredit1.png?raw=true)
 ![afteredit2](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afteredit1.1.png?raw=true)
 
 ## After changing data and clicking "Submit" button
-![updated](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/edited1.png?raw=true)
+![updated](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/edited2.png?raw=true)
 
 ## After clicking "Delete" button
-![afterdelete](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afterdelete1.png?raw=true)
-![afterdelete2](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afterdelete1.1.png?raw=true)
+![afterdelete](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afterdelete2.png?raw=true)
+![afterdelete2](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/afterdelete2.1.png?raw=true)
 
 
 ## Security Vulnerabilities
