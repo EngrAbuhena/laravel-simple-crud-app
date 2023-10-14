@@ -2,13 +2,17 @@
 ### This is a simple CRUD app named Company Management using laravel.
 
 ## Routes
-### GET - http://127.0.0.1:8000/
+#### GET - http://127.0.0.1:8000/
 
-### POST - http://127.0.0.1:8000/companies/create/
+#### POST - http://127.0.0.1:8000/companies/create/
 
-### PUT/PATCH - http://127.0.0.1:8000/companies/edit/{company}
+#### PUT/PATCH - http://127.0.0.1:8000/companies/edit/{company}
 
-### DELETE - http://127.0.0.1:8000/companies/delete/{company}
+#### DELETE - http://127.0.0.1:8000/companies/delete/{company}
+
+## Home Page Display All Companies
+![home](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/home.png?raw=true)
+
 
 ## After clicking the "Create" button
 ![aftercreate](https://github.com/EngrAbuhena/laravel-simple-crud-app/blob/photos/screenshots/aftercreate1.png?raw=true)
