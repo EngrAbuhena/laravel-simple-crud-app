@@ -31,7 +31,7 @@
         @foreach ($companies as $company)
             <tr>
                 <td><center>{{ $company->id }}</center></td>
-                <td><img src="/storage/images/{{$company->image}}" style="width: 100px;height: 100px;"></td>
+                <td><img src="/storage/images/{{$company->image}}" class="rounded-circle" style="width: 100px;height: 100px;"></td>
                 <td>{{ $company->name }}</td>
                 <td>{{ $company->email }}</td>
                 <td>{{ $company->address }}</td>
