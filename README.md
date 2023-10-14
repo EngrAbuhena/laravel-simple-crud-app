@@ -1,6 +1,13 @@
 # Laravel Simple CRUD App
 ### This is a simple CRUD app named Company Management using laravel.
 
+## Features
+#### CRUD
+#### Image Upload
+#### Flash Session
+#### Bootstrap 4
+#### Pagination
+
 ## Routes
 #### GET - http://127.0.0.1:8000/
 
