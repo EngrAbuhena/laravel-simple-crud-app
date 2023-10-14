@@ -7,7 +7,7 @@
                 <h2>Edit Company</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-outline-primary" href="{{ route('home') }}" enctype="multipart/form-data"> Back</a>
+                <a class="btn btn-outline-primary" href="{{ route('home') }}" > Back</a>
             </div>
         </div>
     </div>
@@ -47,7 +47,15 @@
                     @enderror
                 </div>
             </div>
-
+            <div class="col-xs-8 col-sm-8 col-md-8">
+                <div class="form-group">
+                    <strong>Company Photo:</strong>
+                    <input type="file" name="image" value="{{ $company->image }}" class="form-control" placeholder="Company Photo">
+                    @error('photo')
+                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                    @enderror
+                </div>
+            </div>
             <div class="col-xs-8 col-sm-8 col-md-8">
                 <button type="submit" class="btn btn-outline-info">Submit</button>
             </div>

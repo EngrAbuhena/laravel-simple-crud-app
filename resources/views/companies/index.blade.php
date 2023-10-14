@@ -21,20 +21,22 @@
     <table class="table table-bordered">
         <tr>
             <th>S.No</th>
+            <th>Company Photo</th>
             <th>Company Name</th>
             <th>Company Email</th>
             <th>Company Address</th>
-            <th width="280px">Action</th>
+            <th style="width: 200px;">Action</th>
         </tr>
 
         @foreach ($companies as $company)
             <tr>
-                <td>{{ $company->id }}</td>
+                <td><center>{{ $company->id }}</center></td>
+                <td><img src="/storage/images/{{$company->image}}" style="width: 100px;height: 100px;"></td>
                 <td>{{ $company->name }}</td>
                 <td>{{ $company->email }}</td>
                 <td>{{ $company->address }}</td>
                 <td>
-                    
+
                     <form action="{{ route('delete', $company->id) }}" method="post" class="form-group">
 
                         <a class="btn btn-outline-warning" href="{{ route('edit', $company->id) }}">Edit</a>

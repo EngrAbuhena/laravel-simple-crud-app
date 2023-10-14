@@ -17,9 +17,10 @@ class CompanyFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word,
-            'email'=> $this->faker->email(),
-            'address'=> $this->faker->address()
+            'image' => $this->faker->image('public/storage/images', 640, 480, null, false),
+            'name' => $this->faker->company(),
+            'email'=> $this->faker->companyEmail(),
+            'address'=> $this->faker->address(),
         ];
     }
 }

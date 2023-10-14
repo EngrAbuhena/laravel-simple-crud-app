@@ -41,13 +41,24 @@ class CompanyController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
+            'image'=>'required|mimes:jpg,png,jpeg|max:2048',
             'name' => 'required',
             'email' => 'required',
             'address' => 'required'
         ]);
 
+        // upload image
+        if (request()->hasFile('image')){
+            $uploadedImage = $request->file('image');
+            $imageName = time() .'_'.$request->name. '.' . $request->image->getClientOriginalExtension();
+            $destinationPath = public_path('/storage/images/');
+            $uploadedImage->move($destinationPath, $imageName);
+//            dd($request->all());
+        }
+
         $company = new Company;
 
+        $company->image = $imageName;
         $company->name = $request->name;
         $company->email = $request->email;
         $company->address = $request->address;
@@ -91,14 +102,27 @@ class CompanyController extends Controller
      */
     public function update(Request $request, $id): RedirectResponse
     {
+
         $request->validate([
             'name' => 'required',
             'email' => 'required',
             'address' => 'required',
         ]);
+        if (request()->hasFile('image')){
+            $uploadedImage = $request->file('image');
+            $imageName = time() .'_'.$request->name. '.' . $request->image->getClientOriginalExtension();
+            $destinationPath = public_path('/storage/images/');
+            $uploadedImage->move($destinationPath, $imageName);
+//            dd($request->all());
+        }
+
+//        $imageName = time().'.'.$request->image->getClientOriginalExtension();
+//        $destinationPath = public_path('/storage/images/');
+//        $request->image->move($destinationPath,$imageName);
 
         $company = Company::find($id);
 
+        $company->image = $imageName;
         $company->name = $request->name;
         $company->email = $request->email;
         $company->address = $request->address;

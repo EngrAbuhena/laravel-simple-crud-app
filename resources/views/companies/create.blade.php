@@ -52,6 +52,17 @@
                 </div>
             </div>
 
+{{--            upload image--}}
+            <div class="col-xs-8 col-sm-8 col-md-8">
+                <div class="form-group">
+                    <strong>Company Photo:</strong>
+                    <input type="file" name="image" class="form-control" placeholder="Company Photo">
+                    @error('photo')
+                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                    @enderror
+                </div>
+            </div>
+
             <div class="col-xs-8 col-sm-8 col-md-8">
             <button type="submit" class="btn btn-outline-info">Submit</button>
             </div>
