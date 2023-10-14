@@ -6,7 +6,7 @@ use App\Models\Company;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
-//use Illuminate\Http\Response;
+use Illuminate\Http\RedirectResponse;
 
 class CompanyController extends Controller
 {
@@ -36,9 +36,9 @@ class CompanyController extends Controller
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return
+     * @return RedirectResponse
      */
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
         $request->validate([
             'name' => 'required',
@@ -56,7 +56,7 @@ class CompanyController extends Controller
         $company->save();
 
 
-        return redirect()->route('companies.index')
+        return redirect()->route('home')
             ->with('success', 'Company has been created successfully.');
     }
 
@@ -87,9 +87,9 @@ class CompanyController extends Controller
      *
      * @param Request $request
      * @param $id
-     * @return
+     * @return RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id): RedirectResponse
     {
         $request->validate([
             'name' => 'required',
@@ -105,7 +105,7 @@ class CompanyController extends Controller
 
         $company->save();
 
-        return redirect()->route('companies.index')
+        return redirect()->route('home')
             ->with('success', 'Company Has Been updated successfully');
     }
 
@@ -113,13 +113,13 @@ class CompanyController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Company $company
-     * @return
+     * @return RedirectResponse
      */
-    public function destroy(Company $company)
+    public function destroy(Company $company): RedirectResponse
     {
         $company->delete();
 
-        return redirect()->route('companies.index')
+        return redirect()->route('home')
             ->with('success', 'Company has been deleted successfully');
     }
 }
