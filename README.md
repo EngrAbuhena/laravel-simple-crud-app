@@ -1,4 +1,5 @@
 # Laravel Simple CRUD App
+### This is a simple CRUD app named Company Management using laravel.
 
 ## Routes
 ### GET - http://127.0.0.1:8000/companies/
